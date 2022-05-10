@@ -399,11 +399,11 @@ img {
   display: flex;
 }
 
-.team-list .item + .item {
+.team-list .team-list__item + .team-list__item {
   margin-left: 30px;
 }
 
-.team-card {
+.team-list__item {
   background-color: var(--background-primary-color);
   border-radius: 0px 0px 4px 4px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
@@ -415,11 +415,11 @@ img {
   color: var(--title-text-color);
 }
 
-.team-img {
+.team-list__img {
   margin-bottom: 30px;
 }
 
-.title-name {
+.team-list__name {
   width: 151px;
   margin: 0 60px 10px 60px;
   color: var(--title-text-color);
@@ -430,7 +430,7 @@ img {
   text-align: center;
 }
 
-.team-text {
+.team-list__desc {
   width: 147px;
   margin: auto;
   margin-bottom: 16px;
@@ -442,20 +442,20 @@ img {
   letter-spacing: 0.03em;
 }
 
-.team-soc-list {
+.socials {
   display: flex;
   justify-content: center;
   margin-bottom: 30px;
 }
 
-.team-soc-item + .team-soc-item {
+.socials__item + .socials__item {
   margin-left: 10px;
 }
 
-.team-soc-link {
+.socials__link {
   width: 44px;
   height: 44px;
-  background-color: #ffffff;
+  background-color: var(--background-primary-color);
   fill: var(--icon-primary-color);
   border-radius: 50%;
   display: flex;
@@ -466,10 +466,10 @@ img {
     fill 250ms var(--timing-function);
 }
 
-.team-soc-link:hover,
-.team-soc-link:focus {
+.socials__link:hover,
+.socials__link:focus {
   background-color: var(--accent-color);
-  fill: #ffffff;
+  fill: var(--background-primary-color);
 }
 
 /*-----Clients-----*/
@@ -750,42 +750,23 @@ img {
   margin-right: 93px;
 }
 
-.footer-soc-title {
+.footer-soc__title {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
 
-  color: #ffffff;
+  color: var(--background-primary-color);
 
   margin-bottom: 20px;
 }
 
-.footer-soc-list {
-  display: flex;
-}
-
-.footer-soc-item + .footer-soc-item {
-  margin-left: 10px;
-}
-
-.footer-soc-link {
-  width: 44px;
-  height: 44px;
+.socials__link--color {
   background-color: rgba(255, 255, 255, 0.1);
   fill: #ffffff;
-  border-radius: 50%;
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
 
   transition: background-color 250ms var(--timing-function);
-}
-.footer-soc-link:hover,
-.footer-soc-link:focus {
-  background-color: var(--accent-color);
 }
 
 .footer-subscribe {
