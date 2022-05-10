@@ -54,7 +54,7 @@ img {
   margin-right: auto;
   width: 1200px;
   padding: 0 15px;
-  /*outline: 1px solid red;*/
+  outline: 1px solid red;
 }
 
 .title {
@@ -74,7 +74,7 @@ img {
   border-bottom: 1px solid var(--background-page-color);
 }
 
-.header-nav {
+.wrapper-nav {
   display: flex;
   align-items: center;
 }
@@ -90,22 +90,27 @@ img {
   line-height: 1.2;
 }
 
-.logo > .logo-web {
+.logo > .logo__web {
   color: var(--accent-color);
 }
 
 /*---------site nav-------*/
+
+.header-nav {
+  display: flex;
+  align-items: center;
+}
 
 .site-nav {
   display: flex;
   align-items: center;
 }
 
-.site-nav .item:not(:last-child) {
+.site-nav .site-nav__item:not(:last-child) {
   margin-right: 50px;
 }
 
-.site-nav .link {
+.site-nav .site-nav__link {
   position: relative;
   display: block;
 
@@ -120,7 +125,7 @@ img {
   transition: color 250ms var(--timing-function);
 }
 
-.site-nav .link::after {
+.site-nav .site-nav__link::after {
   position: absolute;
   left: 0;
   bottom: 0;
@@ -135,16 +140,16 @@ img {
   transition: opacity 250ms var(--timing-function);
 }
 
-.site-nav .link:hover,
-.site-nav .link:focus {
+.site-nav .site-nav__link:hover,
+.site-nav .site-nav__link:focus {
   color: var(--accent-color);
 }
 
-.site-nav .link.current {
+.site-nav .site-nav__link.current {
   color: var(--accent-color);
 }
 
-.site-nav .link.current::after {
+.site-nav .site-nav__link.current::after {
   opacity: 1;
 }
 
@@ -154,10 +159,11 @@ img {
   display: flex;
   margin-left: auto;
 }
-.auth-nav .item + .item {
+
+.auth-nav .auth-nav__item + .auth-nav__item {
   margin-left: 50px;
 }
-.auth-nav-link {
+.auth-nav__link {
   display: flex;
   align-items: center;
   padding: 32px 0px 32px 0px;
@@ -170,12 +176,12 @@ img {
 
   transition: color 250ms var(--timing-function);
 }
-.auth-nav-link:hover,
-.auth-nav-link:focus {
+.auth-nav__link:hover,
+.auth-nav__link:focus {
   color: var(--accent-color);
 }
 
-.auth-nav-icon {
+.auth-nav__icon {
   display: inline-flex;
   width: 20px;
   height: 20px;
@@ -668,6 +674,7 @@ img {
 
 .footer-container {
   display: flex;
+  outline: 1px solid greenyellow;
 }
 
 .footer-logo-address {
