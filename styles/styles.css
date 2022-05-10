@@ -256,11 +256,11 @@ img {
   display: flex;
 }
 
-.advantages-content .item + .item {
+.advantages-content .advantages-content__item + .advantages-content__item {
   margin-left: 30px;
 }
 
-.advantages-title {
+.advantages-content__title {
   margin-top: 0;
   margin-bottom: 10px;
 
@@ -272,22 +272,22 @@ img {
   text-transform: uppercase;
 }
 
-.advantages-item-antenna::before {
+.advantages-content__item--icon::before {
   content: "";
-  margin: auto;
   width: 270px;
   height: 120px;
-  background-image: url("../img/antenna.svg");
-  background-repeat: no-repeat;
+
+  margin-bottom: 30px;
   display: block;
   background-position: center;
   background-size: 70px 70px;
   background-color: #f4f5fa;
   padding: 25px 100px;
-  margin-bottom: 30px;
+  background-image: url("../img/antenna.svg");
+  background-repeat: no-repeat;
 }
 
-.advantages-item-clock::before {
+/*.advantages-item-clock::before {
   content: "";
   margin: auto;
   width: 270px;
@@ -330,9 +330,9 @@ img {
   background-color: #f4f5fa;
   padding: 25px 100px;
   margin-bottom: 30px;
-}
+}*/
 
-.advantages-text {
+.advantages-content__text {
   margin-top: 0;
   margin-bottom: 0;
   width: 270px;
@@ -342,9 +342,9 @@ img {
   letter-spacing: 0.03em;
 }
 
-.advantages-icon {
+/*.advantages-icon {
   display: block;
-}
+}*/
 
 /*--------WORK-------*/
 
