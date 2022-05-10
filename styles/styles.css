@@ -54,7 +54,6 @@ img {
   margin-right: auto;
   width: 1200px;
   padding: 0 15px;
-  outline: 1px solid red;
 }
 
 .title {
@@ -371,7 +370,7 @@ img {
   text-align: center;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: #ffffff;
+  color: var(--background-primary-color);
 }
 
 .work-text__inner {
@@ -671,7 +670,6 @@ img {
 
 .footer-wrap {
   display: flex;
-  outline: 1px solid greenyellow;
 }
 
 .footer-inner {
@@ -765,7 +763,7 @@ img {
   letter-spacing: 0.03em;
   text-transform: uppercase;
 
-  color: #ffffff;
+  color: var(--background-primary-color);
 }
 
 .footer-subscribe__email {
@@ -784,7 +782,7 @@ img {
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
 
-  color: #ffffff;
+  color: var(--background-primary-color);
   background-color: var(--background-hero-footer-color);
 }
 
