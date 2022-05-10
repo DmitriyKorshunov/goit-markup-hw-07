@@ -291,29 +291,31 @@
     </main>
     <!--Подвал-->
     <footer class="footer">
-      <div class="footer-container container">
-        <div class="footer-logo-address">
-          <a href="https://WebStudio.com" class="logo footer-logo list"
-            ><span class="footer-web">Web</span>Studio</a
+      <div class="footer-wrap container">
+        <div class="footer-inner">
+          <a href="https://WebStudio.com" class="logo footer-inner__logo list"
+            ><span class="logo__web">Web</span>Studio</a
           >
           <address class="address">
             <ul class="address-list list">
-              <li class="item">
+              <li class="address-list__item">
                 <a
                   href="https://goo.gl/maps/mT76Hgf6RmnMrDRZ7"
                   target="_blank"
                   rel="noopener noindex nofollow"
-                  class="footer-adress list"
+                  class="address-list__adress list"
                   >г. Киев, пр-т Леси Украинки, 26</a
                 >
               </li>
-              <li class="item">
-                <a href="mailto:info@devstudio.com" class="footer-mail list"
+              <li class="address-list__item">
+                <a
+                  href="mailto:info@devstudio.com"
+                  class="address-list__link list"
                   >info@example.com</a
                 >
               </li>
-              <li class="item">
-                <a href="tel:+38-096-111-11-11" class="footer-tel list"
+              <li class="address-list__item">
+                <a href="tel:+38-096-111-11-11" class="address-list__link list"
                   >+38 099 111 11 11</a
                 >
               </li>
@@ -356,16 +358,16 @@
         <div
           class="footer-subscribe"
           role="group"
-          aria-labelledby="footer-title-subscride"
+          aria-labelledby="footer-subscribe__title"
         >
-          <h2 class="footer-title-subscride" id="footer-title-subscride">
+          <h2 class="footer-subscribe__title" id="footer-subscribe__title">
             Подпишитесь на рассылку
           </h2>
-          <label class="footer-email">
+          <label class="footer-subscribe__email">
             <input
               type="email"
               name="email"
-              class="footer-input"
+              class="footer-subscribe__input"
               placeholder="E-mail"
               required
             />

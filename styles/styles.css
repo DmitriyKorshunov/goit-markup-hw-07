@@ -106,7 +106,7 @@ img {
   line-height: 1.2;
 }
 
-.logo > .logo__web {
+.logo__web {
   color: var(--accent-color);
 }
 
@@ -669,16 +669,16 @@ img {
   background-color: var(--background-hero-footer-color);
 }
 
-.footer-container {
+.footer-wrap {
   display: flex;
   outline: 1px solid greenyellow;
 }
 
-.footer-logo-address {
+.footer-inner {
   margin-right: 70px;
 }
 
-.footer-logo {
+.footer-inner__logo {
   display: inline-block;
   margin-right: 0;
   margin-bottom: 20px;
@@ -686,25 +686,8 @@ img {
   color: var(--background-primary-color);
 }
 
-.footer-web {
-  margin-top: 60px;
-  color: var(--accent-color);
-}
-
 .address {
   width: 231px;
-}
-
-.address .item.item:nth-last-child(-n + 2) {
-  margin-top: 9px;
-}
-
-.footer-adress {
-  color: var(--background-primary-color);
-
-  font-style: normal;
-  font-size: 14px;
-  line-height: 1.7;
 }
 
 .address-list {
@@ -712,7 +695,19 @@ img {
   width: 231px;
 }
 
-.footer-mail {
+.address .address-list__item.address-list__item:nth-last-child(-n + 2) {
+  margin-top: 9px;
+}
+
+.address-list__adress {
+  color: var(--background-primary-color);
+
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+.address-list__link {
   color: var(--footer-mail-tel-color);
 
   font-style: normal;
@@ -723,24 +718,8 @@ img {
   transition: color 250ms var(--timing-function);
 }
 
-.footer-mail:hover,
-.footer-mail:focus {
-  color: var(--accent-color);
-}
-
-.footer-tel {
-  color: var(--footer-mail-tel-color);
-
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.7;
-
-  transition: color 250ms var(--timing-function);
-}
-
-.footer-tel:hover,
-.footer-tel:focus {
+.address-list__link:hover,
+.address-list__link:focus {
   color: var(--accent-color);
 }
 
@@ -779,7 +758,7 @@ img {
   margin-top: 12px;
 }
 
-.footer-title-subscride {
+.footer-subscribe__title {
   margin-bottom: 20px;
   font-size: 14px;
   line-height: 1.14;
@@ -789,7 +768,7 @@ img {
   color: #ffffff;
 }
 
-.footer-email {
+.footer-subscribe__email {
   position: absolute;
   bottom: 0;
 
@@ -797,7 +776,7 @@ img {
   height: 50px;
 }
 
-.footer-input {
+.footer-subscribe__input {
   padding-left: 16px;
 
   width: 100%;
@@ -809,7 +788,7 @@ img {
   background-color: var(--background-hero-footer-color);
 }
 
-.footer-input::placeholder {
+.footer-subscribe__input::placeholder {
   font-family: "Roboto";
   font-style: normal;
   font-weight: 400;
