@@ -1,4 +1,4 @@
-/*:root {
+:root {
   --primary-text-color: #757575;
   --title-text-color: #212121;
   --accent-color: #2196f3;
@@ -19,11 +19,11 @@ body {
   font-size: 14px;
   line-height: 1.7;
   letter-spacing: 0.03em;
-}*/
+}
 
 /*---Утилита---*/
 
-/*.list {
+.list {
   list-style: none;
   text-decoration: none;
   padding: 0;
@@ -47,16 +47,16 @@ img {
   display: block;
   width: 100%;
   height: auto;
-}*/
+}
 
-/*.container {
+.container {
   margin-left: auto;
   margin-right: auto;
   width: 1200px;
   padding: 0 15px;
-}*/
+}
 
-/*.title {
+.title {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
@@ -64,9 +64,9 @@ img {
   letter-spacing: 0.03em;
 
   color: var(--title-text-color);
-}*/
+}
 
-/*.btn-primary {
+.btn-primary {
   width: 200px;
   height: 50px;
   border: none;
@@ -80,11 +80,11 @@ img {
   font-size: 16px;
   line-height: 1.86;
   letter-spacing: 0.03em;
-}*/
+}
 
 /*------HEADER------*/
 
-/*.header {
+.header {
   background-color: var(--background-primary-color);
   border-bottom: 1px solid var(--background-page-color);
 }
@@ -107,11 +107,11 @@ img {
 
 .logo__web {
   color: var(--accent-color);
-}*/
+}
 
 /*---------site nav-------*/
 
-/*.header-nav {
+.header-nav {
   display: flex;
   align-items: center;
 }
@@ -166,11 +166,11 @@ img {
 
 .site-nav .site-nav__link.current::after {
   opacity: 1;
-}*/
+}
 
 /* auth-nav */
 
-/*.auth-nav {
+.auth-nav {
   display: flex;
   margin-left: auto;
 }
@@ -203,11 +203,10 @@ img {
   fill: currentColor;
   margin-right: 10px;
 }
-*/
 
 /*------------HERO-----------*/
 
-/*.hero {
+.hero {
   max-width: 1600px;
   min-height: 600px;
   margin-left: auto;
@@ -242,12 +241,12 @@ img {
   line-height: 1.4;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-}*/
+}
 
 /* section */
 /*------ADVANTAGES------*/
 
-/*.section-advantages {
+.section-advantages {
   padding-top: 94px;
   padding-bottom: 94px;
 }
@@ -340,7 +339,7 @@ img {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
-}*/
+}
 
 /*--------WORK-------*/
 
