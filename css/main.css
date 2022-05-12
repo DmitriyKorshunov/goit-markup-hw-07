@@ -647,15 +647,13 @@ img {
   right: 0;
   width: 30px;
   height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: var(--background-primary-color);
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
-  background-image: url("../img/closeblack.svg");
-  background-repeat: no-repeat;
-  display: block;
-  background-position: center;
-  background-size: 18px 18px;
-  padding: 0;
+  padding: 6px 0;
   margin-top: 8px;
   margin-right: 8px;
   transform: rotate(0);
@@ -665,6 +663,7 @@ img {
 .modal-button:hover {
   cursor: pointer;
   transform: rotate(180deg);
+  fill: #2196f3;
 }
 
 .modal-titel {
