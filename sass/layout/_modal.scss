@@ -87,10 +87,6 @@
   position: relative;
 }
 
-.modal-field__label--margin {
-  margin-bottom: 20px;
-}
-
 .modal-field__text {
   display: block;
   margin-bottom: 4px;
@@ -100,9 +96,17 @@
   color: var(--primary-text-color);
 }
 
+@mixin margin($margin-bottom) {
+  margin: 0 0 $margin-bottom 0;
+}
+
 .modal-field__inner {
   position: relative;
-  margin-bottom: 10px;
+  @include margin(10px);
+}
+
+.modal-field__label--margin {
+  @include margin(20px);
 }
 
 .modal-field__item {
@@ -142,12 +146,6 @@
 
 .modal-field__input:focus ~ .modal-field__icon {
   fill: #2196f3;
-}
-
-.modal-label {
-  display: block;
-
-  margin-bottom: 20px;
 }
 
 .textarea {
