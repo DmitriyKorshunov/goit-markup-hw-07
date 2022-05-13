@@ -477,10 +477,15 @@
           </svg>
         </button>
         <form class="modal-field">
-          <label class="modal-field__label">
-            <span class="modal-field__text">Имя</span>
-            <div class="modal-field__inner">
+          <ul class="modal-field__inner list">
+            <li>
+              <label for="user-name" class="modal-field__label">
+                <span class="modal-field__text">Имя</span>
+              </label>
+            </li>
+            <li class="modal-field__item">
               <input
+                id="user-name"
                 type="text"
                 name="user-name"
                 class="modal-field__input"
@@ -491,12 +496,17 @@
               <svg width="18" height="18" class="modal-field__icon">
                 <use href="./img/icons.svg#personblack"></use>
               </svg>
-            </div>
-          </label>
-          <label class="modal-field__label">
-            <span class="modal-field__text">Телефон</span>
-            <div class="modal-field__inner">
+            </li>
+          </ul>
+          <ul class="modal-field__inner list">
+            <li>
+              <label for="user-phone" class="modal-field__label">
+                <span class="modal-field__text">Телефон</span>
+              </label>
+            </li>
+            <li class="modal-field__item">
               <input
+                id="user-phone"
                 type="tel"
                 name="user-phone"
                 class="modal-field__input"
@@ -506,12 +516,17 @@
               <svg width="18" height="18" class="modal-field__icon">
                 <use href="./img/icons.svg#phoneblack"></use>
               </svg>
-            </div>
-          </label>
-          <label class="modal-field__label">
-            <span class="modal-field__text">Почта</span>
-            <div class="modal-field__inner">
+            </li>
+          </ul>
+          <ul class="modal-field__inner list">
+            <li>
+              <label for="user-email" class="modal-field__label">
+                <span class="modal-field__text">Почта</span>
+              </label>
+            </li>
+            <li class="modal-field__item">
               <input
+                id="user-email"
                 type="email"
                 name="user-email"
                 class="modal-field__input"
@@ -521,8 +536,8 @@
               <svg width="18" height="18" class="modal-field__icon">
                 <use href="./img/icons.svg#emailblack"></use>
               </svg>
-            </div>
-          </label>
+            </li>
+          </ul>
           <label class="modal-field__label modal-field__label--margin"
             ><span class="modal-field__text">Комментарий</span>
             <textarea
@@ -531,7 +546,6 @@
               placeholder="Введите текст"
             ></textarea>
           </label>
-
           <label class="checkbox-label">
             <input
               type="checkbox"

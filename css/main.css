@@ -683,7 +683,6 @@ img {
 
 .modal-field__label {
   position: relative;
-  margin-bottom: 10px;
 }
 
 .modal-field__label--margin {
@@ -700,6 +699,11 @@ img {
 }
 
 .modal-field__inner {
+  position: relative;
+  margin-bottom: 10px;
+}
+
+.modal-field__item {
   position: relative;
 }
 
